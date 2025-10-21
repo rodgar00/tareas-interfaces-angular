@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: #970707;
+  font-size: xx-large;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  text-decoration: 1px solid black underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+  width: 80%;
+  max-width: 400px;
+  background-color: rgba(184, 52, 22, 0.4);
+  margin: 30px auto;
+
+  /*margin: 0 auto;*/
+  /*margin: 25px; Todos los lados por igual
+  margin: 25px 20px; Vertical y Horizontal
+  margin: 25px 20px 15px; Arriba, Izq/Dcha, Abajo
+  margin: 25px 20px 15px 20px; Arriba, derecha, abajo, izquierda
+  */
+
+  padding: 20px;
+  /*
+  padding: 20px 15px;
+  padding: 20px 25px 15px;
+  padding: 20px 25px 15px 25px;
+  */
+
+  .texto-peque {
+    font-size: medium;
+
+    & {
+      color: blue;
+    }
+  }
+
+}
+
+div .texto-peque {
+  font-size: medium;
+}
+
+
+//div {
+//  display: none;
+//  display: block;
+//  display: inline;
+//  display: inline-block;
+//  display: flex;
+//  display: grid;
+//}
+#flex-work {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+#grid-work {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+
+/*#grid-work > a {
+  display: none;
+}
+*/
+#grid-work label ~ span {
+  color: red;
+}
+
+#grid-work label + span {
+  font-size: xx-large;
+}
+
+/*#grid-work a:first-of-type {
+  display: block;
+  font-size: x-small;
+}
+
+#grid-work a:last-of-type {
+  display: block;
+  font-size: x-small;
+}*/
+
+#grid-work *:nth-child(odd) { /* odd -> impar */
+  display: none;
+}
+
+#grid-work *:nth-child(even) {
+  font-size: xx-large;
+}
