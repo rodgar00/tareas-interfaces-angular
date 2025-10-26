@@ -1,0 +1,47 @@
+$tarea-color-par: #f0f0f0;
+$tarea-color-impar: #cceeff;
+
+.tareas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px; // tamaño móvil
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+
+  button {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #005fa3;
+    }
+  }
+}
+
+.tarea-card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 1rem;
+  color: #333;
+
+  &:nth-child(odd) {
+    background-color: $tarea-color-impar;
+  }
+
+  &:nth-child(even) {
+    background-color: $tarea-color-par;
+  }
+}
+
+// Clase para ocultar items
+.disable {
+  display: none;
+}

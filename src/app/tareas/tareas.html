@@ -1,0 +1,23 @@
+<div class="tareas-container">
+  <button (click)="toggle()">Toggle disable</button>
+
+  <div class="tarea-card" [class.disable]="mostrar && tareas[0].val">
+    {{ tareas[0].nombre }}
+  </div>
+
+  <div class="tarea-card" [class.disable]="mostrar && tareas[1].val">
+    {{ tareas[1].nombre }}
+  </div>
+
+  <div class="tarea-card" [class.disable]="mostrar && tareas[2].val">
+    {{ tareas[2].nombre }}
+  </div>
+
+  <div class="tarea-card" [class.disable]="mostrar && tareas[3].val">
+    {{ tareas[3].nombre }}
+  </div>
+
+  <div class="tarea-card" [class.disable]="mostrar && tareas[4].val">
+    {{ tareas[4].nombre }}
+  </div>
+</div>
