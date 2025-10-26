@@ -1,47 +1,68 @@
-$tarea-color-par: #f0f0f0;
-$tarea-color-impar: #cceeff;
-
 .tareas-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-width: 400px; // tamaño móvil
+  width: 400px;
   margin: 20px auto;
-  font-family: Arial, sans-serif;
 
   button {
     padding: 10px 20px;
     margin-bottom: 15px;
-    border: none;
     border-radius: 5px;
-    background-color: #0077cc;
+    background-color: #2794E3;
     color: white;
-    font-size: 1rem;
+    font-size: 20px;
     cursor: pointer;
 
     &:hover {
-      background-color: #005fa3;
+      background-color: #2759E3;
     }
   }
 }
 
-.tarea-card {
-  padding: 15px;
+.tarea-tarjeta {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  color: #000000;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  font-size: 1rem;
-  color: #333;
 
   &:nth-child(odd) {
-    background-color: $tarea-color-impar;
+    background-color: #FFFFF1;
   }
 
   &:nth-child(even) {
-    background-color: $tarea-color-par;
+    background-color: #E7D8D6;
   }
 }
 
-// Clase para ocultar items
+.tarea-img {
+  width: 50px;
+  height: 50px;
+}
+
+.tarea-contenido {
+  display: flex;
+  flex-direction: column;
+}
+
+.tarea-texto {
+  margin: 0;
+}
+
+.tarea-icono-ubi-contenedor {
+  display: flex;
+}
+
+.tarea-icono-ubi {
+  width: 30px;
+  height: 30px;
+}
+
+.tarea-icono-texto {
+  font-size: 10px;
+}
+
 .disable {
   display: none;
 }

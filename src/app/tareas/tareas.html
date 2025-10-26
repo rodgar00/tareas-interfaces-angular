@@ -1,23 +1,58 @@
 <div class="tareas-container">
-  <button (click)="toggle()">Toggle disable</button>
+  <button (click)="toggle()">Botón para ocultar</button>
 
-  <div class="tarea-card" [class.disable]="mostrar && tareas[0].val">
-    {{ tareas[0].nombre }}
+  <div class="tarea-tarjeta {{ noMostrar ? 'disable' : '' }}">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/125/366/original/cute-pushpin-icon-free-png.png" class="tarea-img">
+    <div class="tarea-contenido">
+      <p class="tarea-texto">Estudiar</p>
+      <div class="tarea-icono-ubi-contenedor">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" class="tarea-icono-ubi">
+        <p class="tarea-icono-texto">Biblioteca</p>
+      </div>
+    </div>
   </div>
 
-  <div class="tarea-card" [class.disable]="mostrar && tareas[1].val">
-    {{ tareas[1].nombre }}
+  <div class="tarea-tarjeta {{ noMostrar ? 'disable' : '' }}">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/125/366/original/cute-pushpin-icon-free-png.png" class="tarea-img">
+    <div class="tarea-contenido">
+      <p class="tarea-texto">Comprar huevos</p>
+      <div class="tarea-icono-ubi-contenedor">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" class="tarea-icono-ubi">
+        <p class="tarea-icono-texto">Mercadona</p>
+      </div>
+    </div>
   </div>
 
-  <div class="tarea-card" [class.disable]="mostrar && tareas[2].val">
-    {{ tareas[2].nombre }}
+  <div class="tarea-tarjeta {{ noMostrar ? 'disable' : '' }}">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/125/366/original/cute-pushpin-icon-free-png.png" class="tarea-img">
+    <div class="tarea-contenido">
+      <p class="tarea-texto">Acabar tarea diseño de interfaces</p>
+      <div class="tarea-icono-ubi-contenedor">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" class="tarea-icono-ubi">
+        <p class="tarea-icono-texto">Casa</p>
+      </div>
+    </div>
   </div>
 
-  <div class="tarea-card" [class.disable]="mostrar && tareas[3].val">
-    {{ tareas[3].nombre }}
+  <div class="tarea-tarjeta {{ noMostrar ? 'disable' : '' }}">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/125/366/original/cute-pushpin-icon-free-png.png" class="tarea-img">
+    <div class="tarea-contenido">
+      <p class="tarea-texto">Acabar ejercicio python</p>
+      <div class="tarea-icono-ubi-contenedor">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" class="tarea-icono-ubi">
+        <p class="tarea-icono-texto">Casa</p>
+      </div>
+    </div>
   </div>
 
-  <div class="tarea-card" [class.disable]="mostrar && tareas[4].val">
-    {{ tareas[4].nombre }}
+  <div class="tarea-tarjeta {{ noMostrar ? 'disable' : '' }}">
+    <img src="https://static.vecteezy.com/system/resources/previews/011/125/366/original/cute-pushpin-icon-free-png.png" class="tarea-img">
+    <div class="tarea-contenido">
+      <p class="tarea-texto">Hacer la cena</p>
+      <div class="tarea-icono-ubi-contenedor">
+        <img src="https://static.vecteezy.com/system/resources/previews/009/589/758/original/location-location-pin-location-icon-transparent-free-png.png" class="tarea-icono-ubi">
+        <p class="tarea-icono-texto">Casa</p>
+      </div>
+    </div>
   </div>
 </div>
